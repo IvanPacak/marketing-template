@@ -1,0 +1,81 @@
+.portfolio-title{
+    width: 25%;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 5px solid black;
+}
+
+.portfolio-title span{
+    font-size: 30px;
+}
+
+.portfolio-item{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+}
+
+.portfolio-img{
+    object-fit: cover;
+    width: 400px;
+    height: 270px;
+    transition: .3s;
+}
+
+.portfolio-item:hover .portfolio-img{
+    transform: scale(1.05, 1.05);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.portfolio-p{
+    position: absolute;
+    display: none;
+    left: 0; 
+    right: 0; 
+    top: 40%;
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: #fff;
+    width: 40%;
+    padding: 5px 0;
+    transition: .3s;
+    z-index: 10;
+}
+
+.portfolio-item:hover .portfolio-p{
+    display: block;
+}
+
+/* RESIZED IMAGE */
+
+.resize-img{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+    transition: .3s;
+    z-index: 10;
+}
+
+.resize-img img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+}
+
+.resize-img span{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    font-size: 40px;
+    cursor: pointer;
+}

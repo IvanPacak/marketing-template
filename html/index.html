@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Marketinger / Home</title>
+</head>
+<body>
+
+    <!-- Links -->
+<header class="header-top">
+    <nav>
+      <div class="nav-item">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="nav-item">
+        <a href="portfolio.html">Portfolio</a>
+      </div>
+      <div class="nav-item">
+        <a href="about.html">About</a>
+      </div>
+      <div class="nav-item">
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+</header>
+  
+  <!-- Content -->
+  <div class="container">
+  
+    <div class="site-title">
+      <h1>MARKETINGER</h1>
+      <p>Digitálna agentúra Marketinger</p>
+    </div>
+  
+    <!-- Slideshow -->
+    <section class="slideShow-container container">
+      <div class="slideShow-Slides">
+        <img class="Slides-img" src="../Images/slideshow1.jpg">
+        <div class="slideShow-Slides-Content">
+          <span>Analyze</span>
+        </div>
+      </div>
+      <div class="slideShow-Slides">
+        <img class="Slides-img" src="../Images/slideshow2.jpg">
+        <div class="slideShow-Slides-Content">
+          <span>Create</span>
+        </div>
+      </div>
+      <div class="slideShow-Slides">
+        <img class="Slides-img" src="../Images/slideshow3.jpg">
+        <div class="slideShow-Slides-Content">
+          <span>Control</span>
+        </div>
+      </div>
+  
+      <!-- Slideshow next/previous buttons -->
+      <div class="slideShow-buttons">
+        <div class="btn-left"><i class="fa fa-arrow-left"></i></div>
+        <div class="btn-right"><i class="fa fa-arrow-right"></i></div>
+      
+        <div class="slideShow-circles">
+          <span class="dots" onclick="showImage(0)"><i class="fa fa-square"></i></span>
+          <span class="dots" onclick="showImage(1)"><i class="fa fa-square"></i></span>
+          <span class="dots" onclick="showImage(2)"><i class="fa fa-square"></i></span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Grid -->
+    <section class="offer-container container">
+      <div class="offer-title">
+        <span>What We Offer</span>
+      </div>
+
+      <div class="offer-element" style="background-color: #f1f1f1;">
+        <h3>Analyze</h3>
+        <br>
+        <p>Pri spolupráci od základov prekopeme váš web aj vaše plány. Analýza dát nám totiž často ukáže, že to, čo chcete, nie je vždy to, čo potrebujete.</p>
+      </div>
+  
+      <div class="offer-element" style="background-color: #9e9e9e;">
+        <h3>Create</h3>
+        <br>
+        <p>Skvelými webmi, obsahom a cool dizajnom sa dnes oháňa kadekto. Ako vás teda presvedčíme, že sme v týchto oblastiach profíci?</p>
+      </div>
+  
+      <div class="offer-element" style="background-color: #616161; color: white">
+        <h3>Control</h3>
+        <br>
+        <p>Projekty, ktoré pre vás zrealizujeme, šírime ďalej všade tam, kde vám prinesú zákazníkov. Musia vám predsa zarábať.</p>
+      </div>
+    </section>
+  
+    <!-- Grid -->
+    <section class="cards-section" id="plans">
+      <div class="cards-section-heading">
+        <h3>Pricing</h3>
+        <br>
+        <p>Vyberte si úroven vašej web stránky.</p>
+      </div>
+      
+      <br>
+
+      <div class="card">
+        <ul>
+          <li class="card-title">Basic Web</li>
+          <li class="card-item"><b>2</b> Podstránky</li>
+          <li class="card-item">Responzivita</li>
+          <li class="card-item"><b>Nekonečná</b> Podpora</li>
+          <li class="card-item">
+            <h2 class="card-price">€ 10</h2>
+            <span>mesačne</span>
+          </li>
+          <li class="card-button">
+            <button>Sign Up</button>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="card">
+        <ul>
+          <li class="card-title">Pro Web</li>
+          <li class="card-item"><b>5</b> Podstránok</li>
+          <li class="card-item">Responzivita</li>
+          <li class="card-item"><b>Nekonečná</b> Podpora</li>
+          <li class="card-item">
+            <h2 class="card-price">€ 25</h2>
+            <span>mesačne</span>
+          </li>
+          <li class="card-button">
+            <button>Sign Up</button>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="card">
+        <ul>
+          <li class="card-title">E-Shop</li>
+          <li class="card-item">Podstránky <b>podľa potreby</b></li>
+          <li class="card-item">Responzivita</li>
+          <li class="card-item"><b>Nekonečná</b> Podpora</li>
+          <li class="card-item">
+            <h2 class="card-price">€ 50</h2>
+            <span>mesačne</span>
+          </li>
+          <li class="card-button">
+            <button>Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  
+  <footer>
+    <h4>Footer</h4>
+    <a href="#" class="btn-top"><i class="fa fa-arrow-up w3-margin-right"></i> To the top</a>
+    <div class="footer-icons-section">
+      <a href="https://sk-sk.facebook.com/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://sk.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    </div>
+    <p>Powered by Ivan Pacák</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

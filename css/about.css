@@ -1,0 +1,61 @@
+.about-title{
+    width: 25%;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 5px solid black;
+}
+
+.about-title span{
+    font-size: 30px;
+}
+
+.about-card{
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    border: 1px solid #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+}
+
+.about-card div img{
+    width: 100%;
+    height: auto;
+}
+
+.about-card div h3, p{
+    margin: 20px;
+    line-height: 1.5;
+}
+
+.about-card div h3{
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.about-proffesion{
+    color: rgb(160, 154, 154);
+}
+
+.about-card-button{
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+.about-card-button:hover{
+    background-color: rgb(160, 154, 154);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 750px){
+    .about-card{
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+    }
+}
